@@ -11,7 +11,7 @@ MeetHub adalah platform aggregator ruang kerja (co-working space) yang membantu 
 ### Backend
 <pre>
 coworking-aggregator/
-├── controllers/          # Logika untuk filtering tempat
+├── controllers/         # Logika untuk filtering tempat
 ├── models/              # Model data (misal: CachedReview)
 ├── server.js            # Entry point aplikasi
 ├── db.js                # Koneksi ke database
@@ -90,3 +90,17 @@ Gunakan Postman atau tool API lain untuk mencoba endpoint filtering, caching, da
 7. /filter : GET by city and activity
 8. /signup : POST
 9. /login : POST
+
+# ERD
+![ERD MeetHub (1)](https://github.com/user-attachments/assets/2ff1fe72-ec13-4be1-b4c0-92d21180b1ee)
+
+### One-to-Many (1:M) :
+- Places  → Cached_Reviews
+- Places  → Place_Facilities
+- Facilities  → Place_Facilities
+- Places  → Place_Activities
+- Activities_Place_Activities
+
+### Many-to-Many (M:M) :
+- Places  → Facilities
+- Places  → Activities
