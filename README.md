@@ -1,5 +1,5 @@
 # MeetHub
-MeetHub adalah aplikasi web backend yang membantu pengguna menemukan tempat co-working berdasarkan lokasi, rating, dan review. Aplikasi ini mengintegrasikan API eksternal dan menggunakan caching serta rate limiting untuk performa maksimal.
+MeetHub adalah platform aggregator ruang kerja (co-working space) yang membantu pengguna menemukan tempat meeting atau bekerja berdasarkan lokasi dan popularitas. Project ini dibangun menggunakan Node.js (backend) dan HTML/CSS (frontend statis), serta menggunakan Redis untuk caching dan OpenCage Geocoding API untuk konversi lokasi ke koordinat.
 
 # Fitur Utama
 1. Filter tempat co-working berdasarkan lokasi, rating, dan review
@@ -8,6 +8,7 @@ MeetHub adalah aplikasi web backend yang membantu pengguna menemukan tempat co-w
 4. Integrasi API eksternal untuk mendapatkan data tempat dan review
 
 # Struktur Proyek
+### Backend
 <pre>
 coworking-aggregator/
 ├── controllers/          # Logika untuk filtering tempat
@@ -19,6 +20,23 @@ coworking-aggregator/
 ├── throttle.js          # Middleware throttle tambahan
 ├── .env                 # Konfigurasi lingkungan (tidak dibagikan)
 ├── package.json         # Metadata dan dependensi
+</pre>
+### Frontend
+<pre>
+MeetHub-Website/
+    MeetHub-Website/
+        about_us.html
+        index.html
+        popular_spaces.html
+        signup.html
+        style.css
+    images/
+        coze_space.jpg
+        foto_meeting.jpg
+        kopitagram_cinere.jpg
+        meethub_logo_transparent_fixed.png
+        teamwork.jpg
+        work_coffee.jpg
 </pre>
 
 # Cara Menjalankan
@@ -61,3 +79,14 @@ Gunakan Postman atau tool API lain untuk mencoba endpoint filtering, caching, da
 3. MySQL
 4. API eksternal untuk data tempat dan review
 5. Middleware rate limiter & throttle
+
+# Endpoint API
+1. /places : GET, GET by id, POST, PUT, DELETE
+2. /facilities : GET, GET by id, POST, PUT, DELETE
+3. /activities : GET, GET by id, POST, PUT, DELETE
+4. /place-facilities : GET, GET by id, POST, DELETE
+5. /place-activities : GET, GET by id, POST, DELETE
+6. /cached-reviews : GET, GET by id, POST, PUT, DELETE
+7. /filter : GET by city and activity
+8. /signup : POST
+9. /login : POST
