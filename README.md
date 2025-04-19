@@ -7,6 +7,9 @@ MeetHub adalah platform aggregator ruang kerja (co-working space) yang membantu 
 3. Rate limiting untuk membatasi akses berlebih
 4. Integrasi API eksternal untuk mendapatkan data tempat dan review
 
+# Mockup
+![MacBook Air (1)](https://github.com/user-attachments/assets/4b31801b-cb40-42f0-91be-a0ea877de6a8)
+
 # Struktur Proyek
 ### Backend
 <pre>
@@ -15,7 +18,8 @@ coworking-aggregator/
 ├── models/              # Model data (misal: CachedReview)
 ├── server.js            # Entry point aplikasi
 ├── db.js                # Koneksi ke database
-├── redisClients.js      # Setup Redis
+├── redisClients.js      # Setup ![MacBook Air](https://github.com/user-attachments/assets/cf8089b9-028d-4f77-a015-b279a53b0a28)
+Redis
 ├── rateLimiter.js       # Middleware rate limiting
 ├── throttle.js          # Middleware throttle tambahan
 ├── .env                 # Konfigurasi lingkungan (tidak dibagikan)
