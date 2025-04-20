@@ -117,6 +117,27 @@ Gunakan Postman atau tool API lain untuk mencoba endpoint filtering, caching, da
 
 ### /filter
 1. GET /filter/ dengan query param seperti ?city=&activity=&...
+<pre>
+Contoh Request:
+http://localhost:3000/filter?city=jakarta&activity=meeting&price_max=30
+
+Contoh Response:
+[
+    {
+        "place_id": 2,
+        "name_place": "StudyClubs",
+        "address": "Jl. Margasatwa 2 No.29",
+        "city": "Jakarta",
+        "latitude": "-6.21460000",
+        "longitude": "106.84510000",
+        "description": "Tempat belajar modern dengan kapasitas besar dan proyektor.",
+        "rating": 4.7,
+        "rating_source": "Google",
+        "price_range": 30,
+        "capacity": 20
+    }
+]
+</pre>
 
 ### /signup
 1. POST /signup
