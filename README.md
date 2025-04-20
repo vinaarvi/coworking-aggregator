@@ -85,15 +85,51 @@ Gunakan Postman atau tool API lain untuk mencoba endpoint filtering, caching, da
 5. Middleware rate limiter & throttle
 
 # Endpoint API
-1. /places : GET, GET by id, POST, PUT, DELETE
-2. /facilities : GET, GET by id, POST, PUT, DELETE
-3. /activities : GET, GET by id, POST, PUT, DELETE
-4. /place-facilities : GET, GET by id, POST, DELETE
-5. /place-activities : GET, GET by id, POST, DELETE
-6. /cached-reviews : GET, GET by id, POST, PUT, DELETE
-7. /filter : GET by city and activity
-8. /signup : POST
-9. /login : POST
+### /places
+1. GET /places/
+2. GET /places/:id
+3. POST /places/
+4. PUT /places/:id
+5. DELETE /places/:id
+
+### /facilities
+1. GET /facilities/
+2. GET /facilities/:id
+3. POST /facilities/
+4. PUT /facilities/:id
+5. DELETE /facilities/:id
+
+### /activities
+1. GET /activities/
+2. GET /activities/:id
+3. POST /activities/
+4. PUT /activities/:id
+5. DELETE /activities/:id
+
+### /place-facilities
+1. GET /place-facilities/
+2. GET /place-facilities/:id
+3. POST /place-facilities/
+4. DELETE /place-facilities/:place_id/:facility_id
+
+### /place-activities
+1. GET /place-activities/
+2. GET /place-activities/:id
+3. POST /place-activities/
+4. DELETE /place-activities/:place_id/:activity_id
+
+### /cached-reviews
+1. GET /cached-reviews/:place_id
+2. POST /cached-reviews/
+
+### /filter
+1. GET /filter/ dengan query param seperti ?city=&activity=&...
+
+### /signup
+1. POST /signup
+
+### /login
+1. POST /login
 
 # ERD
 ![ERD MeetHub (1)](https://github.com/user-attachments/assets/2ff1fe72-ec13-4be1-b4c0-92d21180b1ee)
