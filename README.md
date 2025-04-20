@@ -3,8 +3,8 @@ MeetHub adalah platform aggregator ruang kerja (co-working space) yang membantu 
 
 # Fitur Utama
 1. Filter tempat co-working berdasarkan lokasi, rating, dan review
-2. Caching menggunakan Redis untuk mempercepat respons
-3. Rate limiting untuk membatasi akses berlebih
+2. Rate limiting untuk membatasi akses berlebih
+3. Caching menggunakan Redis untuk mempercepat respons
 4. Integrasi API eksternal untuk mendapatkan data tempat dan review
 
 # Mockup
