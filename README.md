@@ -1,4 +1,4 @@
-![ERD MeetHub fix](https://github.com/user-attachments/assets/5ca6ec05-9fc6-4d7d-94cf-3ef86f802682)# MeetHub
+# MeetHub
 MeetHub adalah platform aggregator ruang kerja (co-working space) yang membantu pengguna menemukan tempat meeting atau bekerja berdasarkan lokasi dan popularitas. Project ini dibangun menggunakan Node.js (backend) dan HTML/CSS (frontend statis), serta menggunakan Redis untuk caching dan OpenCage Geocoding API untuk konversi lokasi ke koordinat.
 
 # Fitur Utama
