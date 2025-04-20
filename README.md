@@ -133,19 +133,6 @@ Gunakan Postman atau tool API lain untuk mencoba endpoint filtering, caching, da
 6. HTML + CSS
 7. Redis
 
-# ERD
-![ERD MeetHub (1)](https://github.com/user-attachments/assets/ed46dcfa-ab60-45bc-919a-a1ef67dfc3dd)
-
-### One-to-Many (1:M) :
-- Places  → Place_Facilities
-- Facilities  → Place_Facilities
-- Places  → Place_Activities
-- Activities_Place_Activities
-
-### Many-to-Many (M:M) :
-- Places  → Facilities (via Place_Facilities)
-- Places  → Activities (via Place_Activities)
-
 # Databases
 MeetHub menggunakan pendekatan **hybrid database**, yaitu gabungan antara **MySQL** dan **MongoDB**.
 
@@ -165,3 +152,16 @@ Digunakan untuk menyimpan data yang lebih fleksibel dan tidak membutuhkan relasi
 <pre>
     cached_review
 </pre>
+
+# ERD
+![ERD MeetHub (1)](https://github.com/user-attachments/assets/ed46dcfa-ab60-45bc-919a-a1ef67dfc3dd)
+
+### One-to-Many (1:M) :
+- Places  → Place_Facilities
+- Facilities  → Place_Facilities
+- Places  → Place_Activities
+- Activities_Place_Activities
+
+### Many-to-Many (M:M) :
+- Places  → Facilities (via Place_Facilities)
+- Places  → Activities (via Place_Activities)
