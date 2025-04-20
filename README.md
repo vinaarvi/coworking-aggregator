@@ -145,3 +145,23 @@ Gunakan Postman atau tool API lain untuk mencoba endpoint filtering, caching, da
 ### Many-to-Many (M:M) :
 - Places  → Facilities (via Place_Facilities)
 - Places  → Activities (via Place_Activities)
+
+# Databases
+MeetHub menggunakan pendekatan **hybrid database**, yaitu gabungan antara **MySQL** dan **MongoDB**.
+
+## MySQL 
+Digunakan untuk menyimpan data terstruktur.
+<pre>
+    places
+    activities
+    facilities
+    place_activities
+    place_facilities
+    users
+</pre>
+
+## MongoDB
+Digunakan untuk menyimpan data yang lebih fleksibel dan tidak membutuhkan relasi kompleks.
+<pre>
+    cached_review
+</pre>
