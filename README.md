@@ -149,7 +149,7 @@ Gunakan Postman atau tool API lain untuk mencoba endpoint filtering, caching, da
 # Databases
 MeetHub menggunakan pendekatan **hybrid database**, yaitu gabungan antara **MySQL** dan **MongoDB**.
 
-## MySQL 
+### MySQL 
 Digunakan untuk menyimpan data terstruktur.
 <pre>
     places
@@ -160,7 +160,7 @@ Digunakan untuk menyimpan data terstruktur.
     users
 </pre>
 
-## MongoDB
+### MongoDB
 Digunakan untuk menyimpan data yang lebih fleksibel dan tidak membutuhkan relasi kompleks.
 <pre>
     cached_review
