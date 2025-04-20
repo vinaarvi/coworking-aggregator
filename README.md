@@ -49,7 +49,7 @@ MeetHub-Website/
 git clone https://github.com/vinaarvi/coworking-aggregator.git
 </pre>
 
-### Ubah Direktori
+### Masuk ke Direktori 
 <pre>
 cd coworking-aggregator
 </pre>
@@ -59,7 +59,7 @@ cd coworking-aggregator
 npm install
 </pre>
 
-### Siapkan file .env
+### Buat file .env di root folder Meethub
 <pre>
 PORT=3000
 DB_HOST=localhost
@@ -69,20 +69,13 @@ DB_NAME=meethub
 REDIS_PORT=6379
 </pre>
 
-### Jalankan Server
+### Jalankan Server 
 <pre>
 node server.js
 </pre>
 
-# Testing
+### Testing API
 Gunakan Postman atau tool API lain untuk mencoba endpoint filtering, caching, dan validasi review.
-
-# Teknologi yang Digunakan
-1. Node.js + Express
-2. Redis
-3. MySQL
-4. API eksternal untuk data tempat dan review
-5. Middleware rate limiter & throttle
 
 # Endpoint API
 ### /places
@@ -130,6 +123,13 @@ Gunakan Postman atau tool API lain untuk mencoba endpoint filtering, caching, da
 
 ### /login
 1. POST /login
+
+# Teknologi yang Digunakan
+1. Node.js + Express
+2. Redis
+3. MySQL
+4. API eksternal untuk data tempat dan review
+5. Middleware rate limiter & throttle
 
 # ERD
 ![ERD MeetHub fix](https://github.com/user-attachments/assets/26204b50-ae1c-42cd-88f4-fed759069829)
