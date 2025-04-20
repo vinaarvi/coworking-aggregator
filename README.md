@@ -1,4 +1,4 @@
-# MeetHub
+![ERD MeetHub fix](https://github.com/user-attachments/assets/5ca6ec05-9fc6-4d7d-94cf-3ef86f802682)# MeetHub
 MeetHub adalah platform aggregator ruang kerja (co-working space) yang membantu pengguna menemukan tempat meeting atau bekerja berdasarkan lokasi dan popularitas. Project ini dibangun menggunakan Node.js (backend) dan HTML/CSS (frontend statis), serta menggunakan Redis untuk caching dan OpenCage Geocoding API untuk konversi lokasi ke koordinat.
 
 # Fitur Utama
@@ -132,7 +132,7 @@ Gunakan Postman atau tool API lain untuk mencoba endpoint filtering, caching, da
 1. POST /login
 
 # ERD
-![ERD MeetHub (1)](https://github.com/user-attachments/assets/2ff1fe72-ec13-4be1-b4c0-92d21180b1ee)
+![ERD MeetHub fix](https://github.com/user-attachments/assets/26204b50-ae1c-42cd-88f4-fed759069829)
 
 ### One-to-Many (1:M) :
 - Places  → Cached_Reviews
@@ -142,5 +142,5 @@ Gunakan Postman atau tool API lain untuk mencoba endpoint filtering, caching, da
 - Activities_Place_Activities
 
 ### Many-to-Many (M:M) :
-- Places  → Facilities
-- Places  → Activities
+- Places  → Facilities (via Place_Facilities)
+- Places  → Activities (via Place_Activities)
