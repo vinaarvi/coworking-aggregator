@@ -141,9 +141,28 @@ Contoh Response:
 
 ### /signup
 1. POST /signup
+<pre>
+Contoh Request:
+http://localhost:3000/signup
+
+Contoh Response:
+{
+    "message": "User berhasil dibuat"
+}
+</pre>
 
 ### /login
 1. POST /login
+<pre>
+Contoh Request:
+http://localhost:3000/login
+
+Contoh Response:
+{
+    "message": "Login berhasil",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJ2aW5hMTIzIiwiaWF0IjoxNzQ1MTYyNzUwLCJleHAiOjE3NDUxNjYzNTB9.ErL7G0eIDv_Zjrmt1BA9AAfF0ynESzRcTAs4AwxKI2A"
+}
+</pre>
 
 # Teknologi yang Digunakan
 1. Node.js + Express
@@ -160,18 +179,18 @@ MeetHub menggunakan pendekatan **hybrid database**, yaitu gabungan antara **MySQ
 ### MySQL 
 Digunakan untuk menyimpan data terstruktur.
 <pre>
-    places
-    activities
-    facilities
-    place_activities
-    place_facilities
-    users
+places
+activities
+facilities
+place_activities
+place_facilities
+users
 </pre>
 
 ### MongoDB
 Digunakan untuk menyimpan data yang lebih fleksibel dan tidak membutuhkan relasi kompleks.
 <pre>
-    cached_review
+cached_review
 </pre>
 
 # ERD
