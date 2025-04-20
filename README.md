@@ -126,11 +126,11 @@ Gunakan Postman atau tool API lain untuk mencoba endpoint filtering, caching, da
 
 # Teknologi yang Digunakan
 1. Node.js + Express
-2. Redis
-3. MySQL
-4. API eksternal untuk data tempat dan review
-5. Middleware rate limiter & throttle
-6. HTML + CSS
+2. MySQL
+3. API eksternal untuk data tempat dan review
+4. Middleware rate limiter & throttle
+5. HTML + CSS
+6. Redis
 
 # ERD
 ![ERD MeetHub fix](https://github.com/user-attachments/assets/26204b50-ae1c-42cd-88f4-fed759069829)
