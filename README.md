@@ -18,7 +18,7 @@ coworking-aggregator/
 ├── models/              # Model data (misal: CachedReview)
 ├── server.js            # Entry point aplikasi
 ├── db.js                # Koneksi ke database
-├── redisClients.js      # Setup ![MacBook Air](https://github.com/user-attachments/assets/cf8089b9-028d-4f77-a015-b279a53b0a28)
+├── redisClients.js      # Setup 
 Redis
 ├── rateLimiter.js       # Middleware rate limiting
 ├── throttle.js          # Middleware throttle tambahan
